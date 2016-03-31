@@ -1,0 +1,156 @@
+/*set*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,
+fieldset,input,textarea,p,blockquote,th,td { 
+	padding: 0; 
+	margin: 0; 
+}
+
+/*page*/
+body {
+	font: 16px/25px 微软雅黑;
+	background: #f2f2f2;
+}
+.nav {
+	height: 60px;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+}
+.nav1 {
+	float: right;
+	margin: 10px 20px 10px 0;
+}
+.nav .logo {
+	float: left;
+	height: 40px;
+	width: 120px;
+	margin-top: 10px ;
+	margin-left: 20px;
+}
+.nav1 li {
+	float: left;
+	list-style: none;
+	margin-left: 15px;
+	line-height: 40px;
+}
+.nav1 a {
+	color: #fff;
+	text-decoration: none;
+}
+.nav1 a:hover {
+	color: #ddd;	/* 鼠标指针移动到链接上 */
+}
+
+.article {
+	margin: 20px 420px 20px 20px;
+	background: #fff;
+	padding: 30px 20px;
+	box-shadow: 2px 2px 2px #999;
+
+}
+.article h2 {
+	line-height: 50px;
+}
+.article h3 {
+	line-height: 50px;
+	color: #333;
+}
+.author {
+	color: #666;
+	line-height: 50px;
+	font-size: 80%;
+}
+.main  p {
+	text-indent: 2em;
+}
+.main img {
+	margin: 10px 0;
+}
+.article ul {
+	margin: 10px 0;
+}
+.article_ul li {
+	list-style: none;
+	text-indent: 2em;
+}
+.pic {
+	list-style: none;
+	list-style-position: inside;
+	border: 1px #ccc solid;
+	margin: 20px;
+	display: inline-block;
+	padding: 5px 10px 10px 10px;
+	width: 100px;
+}
+.pic p {
+	color: #222;
+	font-size: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.pic img {
+	width: 80px;
+	height: 60px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+table, td, th {
+		border: 1px #ccc solid;
+		padding: 5px;
+}
+th {
+	background: #333;
+	text-align: left;
+	color: #fff;
+}
+tfoot {
+	background: #ccc;
+}
+.aside{
+	margin: 20px;
+	background: #fff;
+	padding: 30px 20px;
+	box-shadow: 2px 2px 2px #999;
+	float: right;
+}
+.aside h3 {
+	border-left: 3px #ccc solid;
+	padding: 10px;
+}
+form label {
+	display: inline-block;
+	width: 35%;
+	text-align: right;
+	margin: 10px;
+}
+form textarea {
+	font-weight: bold;
+	height: 100px;
+	vertical-align: top;
+	font-size: 18px;
+	position: relative;
+	top: 10px;
+}
+.tip {
+	color: #777;
+}
+.btsb {
+	width: 100%;
+	background: #3355d0;
+	padding: 7px;
+	color: #fff;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.footer {
+	text-align: center;
+	padding:25px;
+	background: #222;
+	color: #fff;
+	font-size: 14px;
+	line-height: 14px;
+}

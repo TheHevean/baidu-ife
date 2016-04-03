@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.fir,.sec,.thir,.fou {
+	width: 150px;
+	border: 1px #f00 solid;
+	margin-bottom: 10px;
+}
+.fir {
+	height: 120px;
+}
+.sec {
+	height: 100px;
+}
+.thir {
+	height: 40px;
+}
+.fou {
+	height: 200px;
+	border: 1px #00f solid;
+}
+@media all and (max-width: 640px) {
+	.wrapper {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+	.fou {
+		order: -1;
+	}
+}

@@ -1,0 +1,115 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	padding: 20px;
+}
+/*表格部分*/
+table {
+	width: 400px;
+}
+.colgroup:nth-child(1) {
+	width: 20%;
+}
+.colgroup:nth-child(2) {
+	width: 60%;
+}
+.colgroup:nth-child(3) {
+	width: 20%;
+}
+thead {
+	background: #222;
+	text-align: left;
+	color: #fff;
+}
+.red {
+	color: #f00;
+}
+table tbody tr:nth-child(even) {
+	background: #aaa;
+}
+/*输入框*/
+input {
+	margin: 40px 30px;
+    width: 100px;
+    transition: 0.5s width;
+    outline: none;
+}
+
+input:focus {
+    width: 200px;
+}
+
+/*轮播图片部分*/
+.banner {
+	width: 300px;
+	height: 200px;
+	position: relative;
+	left: 30px;
+	overflow: hidden;
+}
+.container {
+	width: 900px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	transition: 0.5s left;
+	animation: mymove 6s infinite;
+	-moz-animation: mymove 6s infinite; /* Firefox */
+	-webkit-animation: mymove 6s infinite; /* Safari and Chrome */
+	-o-animation: mymove 6s infinite; /* Opera */
+}
+.container li {
+	width: 300px;
+	height: 200px;
+	list-style: none;
+	float: left;
+}
+#fir {
+	background: #f00;
+}
+#sec {
+	background: #0f0;
+}
+#thr {
+	background: #00f;
+}
+.controller {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	overflow: hidden;
+}
+.controller a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	background-color: #fff;
+	color: #000;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+}
+
+@-webkit-keyframes mymove {
+	15% {left: 0;}
+	30% {left: -300px;}
+	45% {left: -300px;}
+	60% {left: -600px;}
+	70% {left: -600px;}
+	90% {left: 0px;}
+}
+#aa:target~.container{
+    left: 0;
+}
+#bb:target~.container{
+    left: -100%;
+}
+#cc:target~.container{
+    left: -200%;
+}
